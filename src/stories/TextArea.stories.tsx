@@ -16,11 +16,11 @@ export const TextArea: Story = {
     <FormContainer {...args}>
       <FieldControl
         control="textarea"
-        type="text"
-        label="First Name"
-        name="firstname"
-        placeholder="Enter your first name"
-        helper="Enter your first name"
+        label="Description"
+        name="description"
+        rows="5"
+        placeholder="Please describe"
+        helper="Enter a description"
         required
       />
     </FormContainer>
@@ -33,20 +33,20 @@ export const InColumns: Story = {
       <FieldWrapper cols={2}>
         <FieldControl
           control="textarea"
-          type="text"
-          label="First Name"
-          name="firstname"
-          placeholder="Enter your name"
-          helper="Enter your first name"
+          label="Description"
+          name="description"
+          rows="5"
+          placeholder="Please describe"
+          helper="Enter a description"
           required
         />
         <FieldControl
           control="textarea"
-          type="text"
-          label="Last Name"
-          name="lastname"
-          placeholder="Enter your last name"
-          helper="Enter your last name"
+          label="Description"
+          name="description"
+          rows="5"
+          placeholder="Please describe"
+          helper="Enter a description"
           required
         />
       </FieldWrapper>
@@ -54,36 +54,47 @@ export const InColumns: Story = {
   ),
 };
 
-export const WithThreeFields: Story = {
+export const SizeOptions: Story = {
   render: (args) => (
     <FormContainer {...args}>
-      <FieldWrapper cols={2}>
-        <FieldControl
-          control="input"
-          type="text"
-          label="First Name"
-          name="firstname"
-          placeholder="Enter your name"
-          helper="Enter your first name"
-          required
-        />
-        <FieldControl
-          control="input"
-          type="text"
-          label="Last Name"
-          name="lastname"
-          placeholder="Enter your last name"
-          helper="Enter your last name"
-          required
-        />
-      </FieldWrapper>
       <FieldControl
-        control="input"
-        type="email"
-        label="Email Address"
-        name="emailaddress"
-        placeholder="Enter your email address"
-        helper="Enter your email address"
+        control="textarea"
+        label="Description"
+        name="description"
+        rows="5"
+        placeholder="Please describe"
+        helper="Enter a description"
+        maxWidth="xl"
+        required
+      />
+      <FieldControl
+        control="textarea"
+        label="Description"
+        name="description"
+        rows="5"
+        placeholder="Please describe"
+        helper="Enter a description"
+        maxWidth="lg"
+        required
+      />
+      <FieldControl
+        control="textarea"
+        label="Description"
+        name="description"
+        rows="5"
+        placeholder="Please describe"
+        helper="Enter a description"
+        maxWidth="md"
+        required
+      />
+      <FieldControl
+        control="textarea"
+        label="Description"
+        name="description"
+        rows="5"
+        placeholder="Please describe"
+        helper="Enter a description"
+        maxWidth="sm"
         required
       />
     </FormContainer>
