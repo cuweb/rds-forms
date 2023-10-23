@@ -11,7 +11,7 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj;
 
-export const TextArea: Story = {
+export const TextAreaField: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
