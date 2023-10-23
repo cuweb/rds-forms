@@ -1,5 +1,6 @@
 import { Input } from "../Input/Input";
 import { TextArea } from "../TextArea/TextArea";
+import { Select } from "../Select/Select";
 
 interface FieldControlProps {
   control: string;
@@ -14,6 +15,8 @@ export const FieldControl = (props: FieldControlProps) => {
       return <Input label={rest.label} name={rest.name} {...rest} />;
     case "textarea":
       return <TextArea label={rest.label} name={rest.name} {...rest} />;
+    case "select":
+      return <Select label={rest.label} name={rest.name} {...rest} />;
     default:
       return null;
   }
