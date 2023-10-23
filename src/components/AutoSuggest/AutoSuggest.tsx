@@ -2,19 +2,19 @@ import { useField, ErrorMessage } from "formik";
 import Select from "react-select";
 import { primaryStyles, textStyles, fieldStyles } from "../../styles/styles";
 import { maxWidthClasses } from "../../helpers/optionClasses";
-import TextError from "../TextError/TextError";
+import Error from "../Error/Error";
 
-export interface AutoSuggest {
+export interface AutoSuggestProps {
   label: string;
   name: string;
   maxWidth?: "sm" | "md" | "lg" | "xl";
   helper?: string;
   required?: boolean;
-  options: { value: string; label: string }[];
+  options?: { value: string; label: string }[];
   disabled?: boolean;
 }
 
-const AutoSuggest = ({ ...props }: AutoSuggest) => {
+export const AutoSuggest = ({ ...props }: AutoSuggestProps) => {
   const {
     label,
     name,
@@ -54,7 +54,7 @@ const AutoSuggest = ({ ...props }: AutoSuggest) => {
       />
 
       <ErrorMessage name={name}>
-        {(error) => <TextError>{error}</TextError>}
+        {(error) => <Error>{error}</Error>}
       </ErrorMessage>
     </div>
   );

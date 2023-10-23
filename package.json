@@ -48,6 +48,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
+    "@types/react-select": "^5.0.1",
     "react-select": "^5.7.7"
   }
 }
