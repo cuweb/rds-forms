@@ -41,7 +41,9 @@ export const Checkbox = (props: CheckboxProps) => {
                       type="checkbox"
                       id={option.value}
                       {...field}
+                      {...rest}
                       value={option.value}
+                      className={fieldStyles.disabledCheckbox}
                       checked={
                         field.value && field.value.includes(option.value)
                       }

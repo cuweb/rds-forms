@@ -9,6 +9,8 @@ interface FormContainerProps {
 export const FormContainer = ({ children }: FormContainerProps) => {
   const initialValues = {
     firstname: "",
+    radioOption: "rOption1",
+    checkboxOption: "cOption2",
   };
 
   const validationSchema = Yup.object().shape({
@@ -28,4 +30,4 @@ export const FormContainer = ({ children }: FormContainerProps) => {
       <Form>{children}</Form>
     </Formik>
   );
-}
+};

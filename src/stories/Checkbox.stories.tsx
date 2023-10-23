@@ -27,6 +27,22 @@ export const CheckboxField: Story = {
   ),
 };
 
+export const CheckboxDisabled: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="checkbox"
+        label="Checkbox topic"
+        name="checkboxOption"
+        options={checkboxOptions}
+        helper="Please select a thing"
+        disabled
+        required
+      />
+    </FormContainer>
+  ),
+};
+
 export const InColumns: Story = {
   render: (args) => (
     <FormContainer {...args}>

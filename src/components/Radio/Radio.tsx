@@ -41,7 +41,9 @@ export const Radio = (props: RadioProps) => {
                       type="radio"
                       id={option.value}
                       {...field}
+                      {...rest}
                       value={option.value}
+                      className={fieldStyles.disabledCheckbox}
                       checked={
                         field.value && field.value.includes(option.value)
                       }

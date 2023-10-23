@@ -3,6 +3,7 @@
 // -----------------
 
 export { Checkbox } from './components/Checkbox/Checkbox'
+export { DateTime } from './components/DateTime/DateTime'
 export { Error } from './components/Error/Error'
 export { FieldControl } from './components/FieldControl/FieldControl'
 export { FieldWrapper } from './components/FieldWrapper/FieldWrapper'

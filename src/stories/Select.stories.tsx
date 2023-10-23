@@ -26,6 +26,21 @@ export const SelectField: Story = {
     </FormContainer>
   ),
 };
+export const SelectDisabled: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="select"
+        label="Select a topic"
+        name="selectOption"
+        options={dropdownOptions}
+        helper="Please select a topic of your choosing"
+        disabled
+        required
+      />
+    </FormContainer>
+  ),
+};
 
 export const InColumns: Story = {
   render: (args) => (

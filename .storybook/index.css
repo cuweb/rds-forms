@@ -725,6 +725,10 @@ select {
   display: grid;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }

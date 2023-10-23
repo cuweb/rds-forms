@@ -26,6 +26,23 @@ export const TextAreaField: Story = {
     </FormContainer>
   ),
 };
+export const TextAreaDisabled: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="textarea"
+        label="Description"
+        name="description"
+        rows="5"
+        placeholder="Please describe"
+        helper="Enter a description"
+        required
+        disabled
+        maxWidth="sm"
+      />
+    </FormContainer>
+  ),
+};
 
 export const InColumns: Story = {
   render: (args) => (
