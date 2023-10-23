@@ -10,7 +10,7 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj;
 
-export const Default: Story = {
+export const DateTimeField: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
@@ -20,6 +20,21 @@ export const Default: Story = {
         helper="please select the Start Date "
         required
         maxWidth="sm"
+      />
+    </FormContainer>
+  ),
+};
+
+export const DateTimeDisabled: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="dateTimePicker"
+        label="Date Time"
+        name="dateTime"
+        helper="please select the Start Date "
+        maxWidth="sm"
+        disabled
       />
     </FormContainer>
   ),
@@ -56,16 +71,18 @@ export const ShowTime: Story = {
   ),
 };
 
-export const Disabled: Story = {
+export const MinDate: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
         control="dateTimePicker"
         label="Date Time"
         name="dateTime"
+        dateFormat="dd/MM/yyyy HH:mm"
         helper="please select the Start Date "
         maxWidth="sm"
-        disabled
+        customMinDate={new Date()}
+        showTime
       />
     </FormContainer>
   ),

@@ -26,7 +26,22 @@ export const InputField: Story = {
     </FormContainer>
   ),
 };
-
+export const InputDisabled: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="input"
+        type="text"
+        label="First Name"
+        name="firstname"
+        placeholder="Enter your first name"
+        helper="Enter your first name"
+        disabled
+        required
+      />
+    </FormContainer>
+  ),
+};
 export const InColumns: Story = {
   render: (args) => (
     <FormContainer {...args}>

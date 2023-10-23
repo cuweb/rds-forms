@@ -27,6 +27,22 @@ export const RadioField: Story = {
   ),
 };
 
+export const RadioDisabled: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="radio"
+        label="Radio topic"
+        name="radioOption"
+        options={radioOptions}
+        helper="Please select a thing"
+        disabled
+        required
+      />
+    </FormContainer>
+  ),
+};
+
 export const InColumns: Story = {
   render: (args) => (
     <FormContainer {...args}>

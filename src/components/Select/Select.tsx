@@ -34,7 +34,7 @@ export const Select = (props: InputProps) => {
         as="select"
         id={name}
         name={name}
-        className={fieldStyles.input}
+        className={`${fieldStyles.input} ${fieldStyles.disabled}`}
         {...rest}
       >
         {options &&
