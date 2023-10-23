@@ -54,36 +54,47 @@ export const InColumns: Story = {
   ),
 };
 
-export const WithThreeFields: Story = {
+export const SizeOptions: Story = {
   render: (args) => (
     <FormContainer {...args}>
-      <FieldWrapper cols={2}>
-        <FieldControl
-          control="input"
-          type="text"
-          label="First Name"
-          name="firstname"
-          placeholder="Enter your name"
-          helper="Enter your first name"
-          required
-        />
-        <FieldControl
-          control="input"
-          type="text"
-          label="Last Name"
-          name="lastname"
-          placeholder="Enter your last name"
-          helper="Enter your last name"
-          required
-        />
-      </FieldWrapper>
       <FieldControl
         control="input"
-        type="email"
-        label="Email Address"
-        name="emailaddress"
-        placeholder="Enter your email address"
-        helper="Enter your email address"
+        type="text"
+        label="Your Name"
+        name="yourname"
+        placeholder="Enter your name"
+        helper="Enter your name"
+        maxWidth="xl"
+        required
+      />
+      <FieldControl
+        control="input"
+        type="text"
+        label="Your Name"
+        name="yourname"
+        placeholder="Enter your name"
+        helper="Enter your name"
+        maxWidth="lg"
+        required
+      />
+      <FieldControl
+        control="input"
+        type="text"
+        label="Your Name"
+        name="yourname"
+        placeholder="Enter your name"
+        helper="Enter your name"
+        maxWidth="md"
+        required
+      />
+      <FieldControl
+        control="input"
+        type="text"
+        label="Your Name"
+        name="yourname"
+        placeholder="Enter your name"
+        helper="Enter your name"
+        maxWidth="sm"
         required
       />
     </FormContainer>
