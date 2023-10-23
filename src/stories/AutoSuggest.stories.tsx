@@ -16,7 +16,7 @@ export const AutoSuggestField: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="autoSuggest"
+        control="autosuggest"
         label="Select a topic"
         name="selectOption"
         options={dropdownAutoSuggest}
@@ -31,7 +31,7 @@ export const AutoSuggestDisabled: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="autoSuggest"
+        control="autosuggest"
         label="Select a topic"
         name="selectOption"
         options={dropdownAutoSuggest}
@@ -48,7 +48,7 @@ export const InColumns: Story = {
     <FormContainer {...args}>
       <FieldWrapper cols={2}>
         <FieldControl
-          control="autoSuggest"
+          control="autosuggest"
           label="Select a topic"
           name="selectOption"
           options={dropdownAutoSuggest}
@@ -56,7 +56,7 @@ export const InColumns: Story = {
           required
         />
         <FieldControl
-          control="autoSuggest"
+          control="autosuggest"
           label="Select a topic"
           name="selectOption"
           options={dropdownAutoSuggest}
@@ -72,7 +72,7 @@ export const SizeOptions: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="autoSuggest"
+        control="autosuggest"
         label="Select a topic"
         name="selectOption"
         options={dropdownAutoSuggest}
@@ -81,7 +81,7 @@ export const SizeOptions: Story = {
         maxWidth="xl"
       />
       <FieldControl
-        control="autoSuggest"
+        control="autosuggest"
         label="Select a topic"
         name="selectOption"
         options={dropdownAutoSuggest}
@@ -90,7 +90,7 @@ export const SizeOptions: Story = {
         maxWidth="lg"
       />
       <FieldControl
-        control="autoSuggest"
+        control="autosuggest"
         label="Select a topic"
         name="selectOption"
         options={dropdownAutoSuggest}
@@ -99,7 +99,7 @@ export const SizeOptions: Story = {
         maxWidth="md"
       />
       <FieldControl
-        control="autoSuggest"
+        control="autosuggest"
         label="Select a topic"
         name="selectOption"
         options={dropdownAutoSuggest}

@@ -6,7 +6,6 @@ import { Radio } from "../Radio/Radio";
 import { AutoSuggest } from "../AutoSuggest/AutoSuggest";
 import { DateTime } from "../DateTime/DateTime";
 
-
 interface FieldControlProps {
   control: string;
   [key: string]: any;
@@ -26,7 +25,7 @@ export const FieldControl = (props: FieldControlProps) => {
       return <Checkbox label={rest.label} name={rest.name} {...rest} />;
     case "radio":
       return <Radio label={rest.label} name={rest.name} {...rest} />;
-    case "autoSuggest":
+    case "autosuggest":
       return <AutoSuggest label={rest.label} name={rest.name} {...rest} />;
     case "datetime":
       return <DateTime label={rest.label} name={rest.name} {...rest} />;
