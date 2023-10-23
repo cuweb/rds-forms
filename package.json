@@ -12,7 +12,8 @@
     "build:tailwind": "npx tailwindcss -m -i ./src/styles/tailwind.css -o ./dist/rds-forms.css",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build-storybook": "build:tailwind && storybook build"
+    "build-storybook": "build:tailwind && storybook build",
+    "clean": "rm -rf node_modules ; npm ci"
   },
   "peerDependencies": {
     "formik": "^2.4.5",
