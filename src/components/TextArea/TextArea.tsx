@@ -3,7 +3,7 @@ import Error from "../Error/Error";
 import { primaryStyles, textStyles, fieldStyles } from "../../styles/styles";
 import { maxWidthClasses } from "../../helpers/optionClasses";
 
-export interface InputProps {
+export interface TextAreaProps {
   label: string;
   name: string;
   maxWidth?: "sm" | "md" | "lg" | "xl";
@@ -11,7 +11,7 @@ export interface InputProps {
   required?: boolean;
 }
 
-export const Input = (props: InputProps) => {
+export const TextArea = (props: TextAreaProps) => {
   const { label, name, maxWidth, helper, required, ...rest } = props;
   const fieldMaxWidth = maxWidth ? maxWidthClasses[maxWidth] : "";
   const requiredClass = required ? primaryStyles.required : "";
@@ -27,7 +27,7 @@ export const Input = (props: InputProps) => {
       {helper && <div className={textStyles.helper}>{helper}</div>}
 
       <Field
-        type="text"
+        as="textarea"
         id={name}
         name={name}
         className={fieldStyles.input}

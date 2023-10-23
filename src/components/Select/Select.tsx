@@ -9,10 +9,14 @@ export interface InputProps {
   maxWidth?: "sm" | "md" | "lg" | "xl";
   helper?: string;
   required?: boolean;
+  options?: {
+    key: string;
+    value: string;
+  }[];
 }
 
-export const Input = (props: InputProps) => {
-  const { label, name, maxWidth, helper, required, ...rest } = props;
+export const Select = (props: InputProps) => {
+  const { label, name, options, maxWidth, helper, required, ...rest } = props;
   const fieldMaxWidth = maxWidth ? maxWidthClasses[maxWidth] : "";
   const requiredClass = required ? primaryStyles.required : "";
 
@@ -27,12 +31,21 @@ export const Input = (props: InputProps) => {
       {helper && <div className={textStyles.helper}>{helper}</div>}
 
       <Field
-        type="text"
+        as="select"
         id={name}
         name={name}
         className={fieldStyles.input}
         {...rest}
-      />
+      >
+        {options &&
+          options.map((option) => {
+            return (
+              <option key={option.value} value={option.value}>
+                {option.key}
+              </option>
+            );
+          })}
+      </Field>
 
       <ErrorMessage name={name}>
         {(error) => <Error>{error}</Error>}
