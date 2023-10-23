@@ -12,7 +12,7 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj;
 
-export const SelectComponent: Story = {
+export const SelectField: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
