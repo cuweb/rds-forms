@@ -1,5 +1,6 @@
 import { Input } from "../Input/Input";
 import { TextArea } from "../TextArea/TextArea";
+import { DateTimePicker } from "../DateTimePicker/DateTimePicker";
 
 interface FieldControlProps {
   control: string;
@@ -14,6 +15,8 @@ export const FieldControl = (props: FieldControlProps) => {
       return <Input label={rest.label} name={rest.name} {...rest} />;
     case "textarea":
       return <TextArea label={rest.label} name={rest.name} {...rest} />;
+    case "dateTimePicker":
+      return <DateTimePicker label={rest.label} name={rest.name} {...rest} />;
     default:
       return null;
   }

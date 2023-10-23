@@ -19,6 +19,9 @@ export const fieldStyles = {
   verticalOptions: `flex flex-col gap-2`,
   uploads: `max-w-xs focus:outline-none`,
   errorInput: `border border-red-600 rounded-md p-2`,
+  disabled: `disabled:bg-slate-100 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none `,
+  disabledCheckbox: `disabled:pointer-events-none disabled:bg-gray-300 disabled:text-black-800 `,
+  disabledUpload: `disabled:pointer-events-none`,
 };
 
 export const fieldErrorStyles = {
