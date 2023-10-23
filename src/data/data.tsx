@@ -16,6 +16,7 @@ export const checkboxOptions = [
   { key: "Option 2", value: "cOption2" },
   { key: "Option 3", value: "cOption3" },
 ];
+
 export const selectCountry = [
   { value: "usa", label: "USA" },
   { value: "canada", label: "Canada" },
