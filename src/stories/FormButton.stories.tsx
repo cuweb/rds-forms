@@ -4,7 +4,7 @@ import { FieldControl } from "../components/FieldControl/FieldControl";
 import { FormButton } from "..";
 
 const meta: Meta = {
-  title: "Examples/Form Fields",
+  title: "Components/Button",
   tags: ["autodocs"],
 };
 
