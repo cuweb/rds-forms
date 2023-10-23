@@ -9,3 +9,5 @@ export const Error = (props: ErrorProps) => {
     <div className="font-semibold error text-cu-red">{props.children}</div>
   );
 };
+
+export default Error;

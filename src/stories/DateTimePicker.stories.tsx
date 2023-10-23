@@ -10,7 +10,7 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj;
 
-export const DateTimePicker: Story = {
+export const Default: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
@@ -19,6 +19,53 @@ export const DateTimePicker: Story = {
         name="dateTime"
         helper="please select the Start Date "
         required
+        maxWidth="sm"
+      />
+    </FormContainer>
+  ),
+};
+
+export const FormatChange: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="dateTimePicker"
+        label="Date Time"
+        name="dateTime"
+        helper="please select the Start Date "
+        dateFormat="dd/MM/yyyy"
+        required
+        maxWidth="sm"
+      />
+    </FormContainer>
+  ),
+};
+export const ShowTime: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="dateTimePicker"
+        label="Date Time"
+        name="dateTime"
+        dateFormat="dd/MM/yyyy HH:mm"
+        helper="please select the Start Date "
+        maxWidth="sm"
+        showTime
+      />
+    </FormContainer>
+  ),
+};
+
+export const Disabled: Story = {
+  render: (args) => (
+    <FormContainer {...args}>
+      <FieldControl
+        control="dateTimePicker"
+        label="Date Time"
+        name="dateTime"
+        helper="please select the Start Date "
+        maxWidth="sm"
+        disabled
       />
     </FormContainer>
   ),
