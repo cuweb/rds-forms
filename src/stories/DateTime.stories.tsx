@@ -3,7 +3,7 @@ import { FormContainer } from "../components/FormContainer/FormContainer";
 import { FieldControl } from "../components/FieldControl/FieldControl";
 
 const meta: Meta = {
-  title: "Components/DateTimePicker",
+  title: "Components/Date & Time",
   tags: ["autodocs"],
 };
 
@@ -14,9 +14,9 @@ export const DateTimeField: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="dateTimePicker"
+        control="datetime"
         label="Date Time"
-        name="dateTime"
+        name="datetime"
         helper="please select the Start Date "
         required
         maxWidth="sm"
@@ -29,9 +29,9 @@ export const DateTimeDisabled: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="dateTimePicker"
+        control="datetime"
         label="Date Time"
-        name="dateTime"
+        name="datetime"
         helper="please select the Start Date "
         maxWidth="sm"
         disabled
@@ -44,9 +44,9 @@ export const FormatChange: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="dateTimePicker"
+        control="datetime"
         label="Date Time"
-        name="dateTime"
+        name="datetime"
         helper="please select the Start Date "
         dateFormat="dd/MM/yyyy"
         required
@@ -59,9 +59,9 @@ export const ShowTime: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="dateTimePicker"
+        control="datetime"
         label="Date Time"
-        name="dateTime"
+        name="datetime"
         dateFormat="dd/MM/yyyy HH:mm"
         helper="please select the Start Date "
         maxWidth="sm"
@@ -75,9 +75,9 @@ export const MinDate: Story = {
   render: (args) => (
     <FormContainer {...args}>
       <FieldControl
-        control="dateTimePicker"
+        control="datetime"
         label="Date Time"
-        name="dateTime"
+        name="datetime"
         dateFormat="dd/MM/yyyy HH:mm"
         helper="please select the Start Date "
         maxWidth="sm"

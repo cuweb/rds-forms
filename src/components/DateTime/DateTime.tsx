@@ -1,11 +1,11 @@
 import { ErrorMessage, useField } from "formik";
 import Error from "../Error/Error";
 import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import { primaryStyles, textStyles, fieldStyles } from "../../styles/styles";
 import { maxWidthClasses } from "../../helpers/optionClasses";
+import "react-datepicker/dist/react-datepicker.css";
 
-export interface DateTimePickerProps {
+export interface DateTimeProps {
   label: string;
   name: string;
   maxWidth?: "sm" | "md" | "lg" | "xl";
@@ -17,9 +17,10 @@ export interface DateTimePickerProps {
   timeFormat?: string;
 }
 
-export const DateTimePicker = ({ name, ...props }: DateTimePickerProps) => {
+export const Input = (props: DateTimeProps) => {
   const {
     label,
+    name,
     helper,
     required,
     showTime,
