@@ -30,7 +30,7 @@ export const Input = (props: InputProps) => {
         type="text"
         id={name}
         name={name}
-        className={fieldStyles.input}
+        className={`${fieldStyles.input} ${fieldStyles.disabled}`}
         {...rest}
       />
 

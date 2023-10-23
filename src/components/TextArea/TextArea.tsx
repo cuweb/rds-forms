@@ -30,7 +30,7 @@ export const TextArea = (props: TextAreaProps) => {
         as="textarea"
         id={name}
         name={name}
-        className={fieldStyles.input}
+        className={`${fieldStyles.input} ${fieldStyles.disabled}`}
         {...rest}
       />
 

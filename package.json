@@ -12,7 +12,8 @@
     "build:tailwind": "npx tailwindcss -m -i ./src/styles/tailwind.css -o ./dist/rds-forms.css",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build-storybook": "build:tailwind && storybook build"
+    "build-storybook": "build:tailwind && storybook build",
+    "clean": "rm -rf node_modules ; npm ci"
   },
   "peerDependencies": {
     "formik": "^2.4.5",
@@ -30,6 +31,7 @@
     "@storybook/react-vite": "^7.5.1",
     "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.15",
+    "@types/react-datepicker": "^4.19.1",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
@@ -46,5 +48,8 @@
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.6.0",
     "vite-tsconfig-paths": "^4.2.1"
+  },
+  "dependencies": {
+    "react-datepicker": "^4.21.0"
   }
 }
