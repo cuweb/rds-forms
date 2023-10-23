@@ -4,7 +4,7 @@ import { FieldWrapper } from "../components/FieldWrapper/FieldWrapper";
 import { FieldControl } from "../components/FieldControl/FieldControl";
 
 const meta: Meta = {
-  title: "Examples/TextArea Field",
+  title: "Components/TextArea",
   tags: ["autodocs"],
 };
 
