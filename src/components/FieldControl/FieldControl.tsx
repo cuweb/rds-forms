@@ -2,6 +2,7 @@ import { Input } from "../Input/Input";
 import { TextArea } from "../TextArea/TextArea";
 import { Select } from "../Select/Select";
 import { Checkbox } from "../Checkbox/Checkbox";
+import { Radio } from "../Radio/Radio";
 
 interface FieldControlProps {
   control: string;
@@ -20,6 +21,8 @@ export const FieldControl = (props: FieldControlProps) => {
       return <Select label={rest.label} name={rest.name} {...rest} />;
     case "checkbox":
       return <Checkbox label={rest.label} name={rest.name} {...rest} />;
+    case "radio":
+      return <Radio label={rest.label} name={rest.name} {...rest} />;
     default:
       return null;
   }
