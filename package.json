@@ -50,6 +50,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
-    "react-datepicker": "^4.21.0"
+    "react-datepicker": "^4.21.0",
+    "react-quill": "^2.0.0"
   }
 }

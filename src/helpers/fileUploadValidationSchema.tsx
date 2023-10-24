@@ -5,7 +5,7 @@ const fileUploadValidationSchema = Yup.object().shape({
     .test("is-allowed-format", "Invalid file format", (value) => {
       if (!value) return true;
 
-      const file = value;
+      const file = value as File;
       const fileType = file.type;
       const allowedFileTypes = [
         "application/pdf",
@@ -20,17 +20,13 @@ const fileUploadValidationSchema = Yup.object().shape({
 
       return allowedFileTypes.includes(fileType);
     })
-    .test(
-      "is-file-size-valid",
-      "File size must be less than 10MB",
-      (value) => {
-        if (!value) return true;
+    .test("is-file-size-valid", "File size must be less than 10MB", (value) => {
+      if (!value) return true;
 
-        const file = value;
+      const file = value as File;
 
-        return file.size <= 10 * 1024 * 1024;
-      }
-    ),
+      return file.size <= 10 * 1024 * 1024;
+    }),
 });
 
-export default fileUploadValidationSchema
+export default fileUploadValidationSchema;
