@@ -28,7 +28,7 @@
     "watch:tailwind": "npx tailwindcss -w -i ./src/styles/tailwind.css -o ./.storybook/index.css",
     "build:tailwind": "npx tailwindcss -m -i ./src/styles/tailwind.css -o ./dist/rds-forms.css",
     "preview": "vite preview",
-    "build-storybook": "build:tailwind && storybook build",
+    "build-storybook": "npm run build:tailwind && storybook build",
     "clean": "rm -rf node_modules ; npm ci",
     "prepare": "husky install"
   },
