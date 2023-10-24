@@ -1,16 +1,16 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { FormContainer } from "../components/FormContainer/FormContainer";
-import { FieldWrapper } from "../components/FieldWrapper/FieldWrapper";
-import { FieldControl } from "../components/FieldControl/FieldControl";
-import { checkboxOptions } from "../data/data";
+import type { Meta, StoryObj } from '@storybook/react'
+import { FormContainer } from '../components/FormContainer/FormContainer'
+import { FieldWrapper } from '../components/FieldWrapper/FieldWrapper'
+import { FieldControl } from '../components/FieldControl/FieldControl'
+import { checkboxOptions } from '../data/data'
 
 const meta: Meta = {
-  title: "Components/Checkbox",
-  tags: ["autodocs"],
-};
+  title: 'Components/Checkbox',
+  tags: ['autodocs'],
+}
 
-export default meta;
-type Story = StoryObj;
+export default meta
+type Story = StoryObj
 
 export const CheckboxField: Story = {
   render: (args) => (
@@ -25,7 +25,7 @@ export const CheckboxField: Story = {
       />
     </FormContainer>
   ),
-};
+}
 
 export const CheckboxDisabled: Story = {
   render: (args) => (
@@ -41,7 +41,7 @@ export const CheckboxDisabled: Story = {
       />
     </FormContainer>
   ),
-};
+}
 
 export const InColumns: Story = {
   render: (args) => (
@@ -66,7 +66,7 @@ export const InColumns: Story = {
       </FieldWrapper>
     </FormContainer>
   ),
-};
+}
 
 export const InlineOptions: Story = {
   render: (args) => (
@@ -82,4 +82,4 @@ export const InlineOptions: Story = {
       />
     </FormContainer>
   ),
-};
+}

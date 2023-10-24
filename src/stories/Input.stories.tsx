@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { FormContainer } from "../components/FormContainer/FormContainer";
-import { FieldWrapper } from "../components/FieldWrapper/FieldWrapper";
-import { FieldControl } from "../components/FieldControl/FieldControl";
+import type { Meta, StoryObj } from '@storybook/react'
+import { FormContainer } from '../components/FormContainer/FormContainer'
+import { FieldWrapper } from '../components/FieldWrapper/FieldWrapper'
+import { FieldControl } from '../components/FieldControl/FieldControl'
 
 const meta: Meta = {
-  title: "Components/Input",
-  tags: ["autodocs"],
-};
+  title: 'Components/Input',
+  tags: ['autodocs'],
+}
 
-export default meta;
-type Story = StoryObj;
+export default meta
+type Story = StoryObj
 
 export const InputField: Story = {
   render: (args) => (
@@ -25,7 +25,7 @@ export const InputField: Story = {
       />
     </FormContainer>
   ),
-};
+}
 export const InputDisabled: Story = {
   render: (args) => (
     <FormContainer {...args}>
@@ -41,7 +41,7 @@ export const InputDisabled: Story = {
       />
     </FormContainer>
   ),
-};
+}
 export const InColumns: Story = {
   render: (args) => (
     <FormContainer {...args}>
@@ -67,7 +67,7 @@ export const InColumns: Story = {
       </FieldWrapper>
     </FormContainer>
   ),
-};
+}
 
 export const SizeOptions: Story = {
   render: (args) => (
@@ -114,4 +114,4 @@ export const SizeOptions: Story = {
       />
     </FormContainer>
   ),
-};
+}

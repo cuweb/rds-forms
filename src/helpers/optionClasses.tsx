@@ -1,10 +1,10 @@
 // Function to determine the maxWidth class
 export const maxWidthClasses = {
-    sm: 'max-w-xs',
-    md: 'max-w-xl',
-    lg: 'max-w-4xl',
-    xl: 'max-w-7xl',
-  }
+  sm: 'max-w-xs',
+  md: 'max-w-xl',
+  lg: 'max-w-4xl',
+  xl: 'max-w-7xl',
+}
 
 export const gridColsClass = {
   1: 'grid-cols-1',

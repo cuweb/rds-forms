@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { FormContainer } from "../components/FormContainer/FormContainer";
-import { FieldControl } from "../components/FieldControl/FieldControl";
-import { FormButton } from "..";
+import type { Meta, StoryObj } from '@storybook/react'
+import { FormContainer } from '../components/FormContainer/FormContainer'
+import { FieldControl } from '../components/FieldControl/FieldControl'
+import { FormButton } from '..'
 
 const meta: Meta = {
-  title: "Components/Button",
-  tags: ["autodocs"],
-};
+  title: 'Components/Button',
+  tags: ['autodocs'],
+}
 
-export default meta;
-type Story = StoryObj;
+export default meta
+type Story = StoryObj
 
 export const FormExample: Story = {
   render: (args) => (
@@ -26,4 +26,4 @@ export const FormExample: Story = {
       <FormButton />
     </FormContainer>
   ),
-};
+}
