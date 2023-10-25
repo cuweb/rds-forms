@@ -14,7 +14,7 @@ export interface ImageUploadProps {
   required?: boolean;
 }
 
-export const ImageUpload = (props: ImageUploadProps) => {
+export const ImageUpload = ({ ...props }: ImageUploadProps) => {
   const { label, name, maxWidth, helper, required, ...rest } = props;
   const fieldMaxWidth = maxWidth ? maxWidthClasses[maxWidth] : "";
   const requiredClass = required ? primaryStyles.required : "";
