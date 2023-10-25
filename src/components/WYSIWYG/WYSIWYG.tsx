@@ -15,7 +15,7 @@ export interface WYSIWYGUploadProps {
   required?: boolean;
 }
 
-export const WYSIWYG = (props: WYSIWYGUploadProps) => {
+export const WYSIWYG = ({ ...props }: WYSIWYGUploadProps) => {
   const { label, name, maxWidth, helper, required, ...rest } = props;
   const fieldMaxWidth = maxWidth ? maxWidthClasses[maxWidth] : "";
   const requiredClass = required ? primaryStyles.required : "";
