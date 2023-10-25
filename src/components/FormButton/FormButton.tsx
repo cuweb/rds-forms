@@ -4,7 +4,7 @@ export interface FormButtonProps {
   submit?: string
 }
 
-export const FormButton = (props: FormButtonProps) => {
+export const FormButton = ({ ...props }: FormButtonProps) => {
   const { submit = 'Submit' } = props
 
   return (

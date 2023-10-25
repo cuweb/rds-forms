@@ -15,7 +15,7 @@ export interface InputProps {
   }[]
 }
 
-export const Select = (props: InputProps) => {
+export const Select = ({ ...props }: InputProps) => {
   const { label, name, options, maxWidth, helper, required, ...rest } = props
   const fieldMaxWidth = maxWidth ? maxWidthClasses[maxWidth] : ''
   const requiredClass = required ? primaryStyles.required : ''

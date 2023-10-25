@@ -1,6 +1,6 @@
 import { gridColsClass } from '../../helpers/optionClasses'
 
-interface FieldWrapperProps {
+export interface FieldWrapperProps {
   children: React.ReactNode
   cols?: 1 | 2 | 3 | 4
 }

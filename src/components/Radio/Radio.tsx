@@ -14,7 +14,7 @@ export interface RadioProps {
   }[]
 }
 
-export const Radio = (props: RadioProps) => {
+export const Radio = ({ ...props }: RadioProps) => {
   const { label, name, options, isInline, helper, required, ...rest } = props
   const requiredClass = required ? primaryStyles.required : ''
   const displayInline = isInline ? fieldStyles.horizontalOptions : fieldStyles.verticalOptions

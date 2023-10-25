@@ -2,7 +2,7 @@ import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { ReactNode } from 'react'
 
-interface FormContainerProps {
+export interface FormContainerProps {
   children: ReactNode
 }
 
