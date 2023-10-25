@@ -19,27 +19,5 @@ export default defineConfig(() => ({
       formats: ['es', 'umd'],
       fileName: (format) => `rds-forms.${format}.js`,
     },
-    rollupOptions: {
-      external: [
-        'formik',
-        'react',
-        'react-datepicker',
-        'react-dom',
-        'react-quill',
-        'react-select',
-        'yup'
-      ],
-      output: {
-        globals: {
-          formik: 'formik',
-          react: 'React',
-          'react-dom': 'ReactDOM',
-          'react-datepicker': 'ReactDatePicker',
-          'react-quill': 'ReactQuill',
-          'react-select': 'ReactSelect',
-          yup: 'Yup',
-        },
-      },
-    },
   },
 }))
