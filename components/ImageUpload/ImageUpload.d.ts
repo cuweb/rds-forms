@@ -5,4 +5,4 @@ export interface ImageUploadProps {
     helper?: string;
     required?: boolean;
 }
-export declare const ImageUpload: (props: ImageUploadProps) => import("react/jsx-runtime").JSX.Element;
+export declare const ImageUpload: ({ ...props }: ImageUploadProps) => import("react/jsx-runtime").JSX.Element;

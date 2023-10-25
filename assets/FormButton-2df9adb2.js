@@ -1,0 +1,2 @@
+import{j as o}from"./jsx-runtime-67b75a65.js";import{p as s}from"./FieldControl-788fdd0c.js";const r=({...t})=>{const{submit:e="Submit"}=t;return o.jsx("button",{type:"submit","aria-label":"Submit",className:s.button,children:e})};try{r.displayName="FormButton",r.__docgenInfo={description:"",displayName:"FormButton",props:{submit:{defaultValue:null,description:"",name:"submit",required:!1,type:{name:"string"}}}}}catch{}export{r as F};
+//# sourceMappingURL=FormButton-2df9adb2.js.map

@@ -5,4 +5,4 @@ export interface FileUploadProps {
     helper?: string;
     required?: boolean;
 }
-export declare const FileUpload: (props: FileUploadProps) => import("react/jsx-runtime").JSX.Element;
+export declare const FileUpload: ({ ...props }: FileUploadProps) => import("react/jsx-runtime").JSX.Element;

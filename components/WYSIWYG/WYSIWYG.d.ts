@@ -5,4 +5,4 @@ export interface WYSIWYGUploadProps {
     helper?: string;
     required?: boolean;
 }
-export declare const WYSIWYG: (props: WYSIWYGUploadProps) => import("react/jsx-runtime").JSX.Element;
+export declare const WYSIWYG: ({ ...props }: WYSIWYGUploadProps) => import("react/jsx-runtime").JSX.Element;
