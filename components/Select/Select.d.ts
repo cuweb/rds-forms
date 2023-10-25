@@ -9,4 +9,4 @@ export interface InputProps {
         value: string;
     }[];
 }
-export declare const Select: (props: InputProps) => import("react/jsx-runtime").JSX.Element;
+export declare const Select: ({ ...props }: InputProps) => import("react/jsx-runtime").JSX.Element;

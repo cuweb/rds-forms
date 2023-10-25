@@ -9,4 +9,4 @@ export interface CheckboxProps {
         value: string;
     }[];
 }
-export declare const Checkbox: (props: CheckboxProps) => import("react/jsx-runtime").JSX.Element;
+export declare const Checkbox: ({ ...props }: CheckboxProps) => import("react/jsx-runtime").JSX.Element;

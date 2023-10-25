@@ -9,4 +9,4 @@ export interface RadioProps {
         value: string;
     }[];
 }
-export declare const Radio: (props: RadioProps) => import("react/jsx-runtime").JSX.Element;
+export declare const Radio: ({ ...props }: RadioProps) => import("react/jsx-runtime").JSX.Element;

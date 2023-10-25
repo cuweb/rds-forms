@@ -5,4 +5,4 @@ export interface InputProps {
     helper?: string;
     required?: boolean;
 }
-export declare const Input: (props: InputProps) => import("react/jsx-runtime").JSX.Element;
+export declare const Input: ({ ...props }: InputProps) => import("react/jsx-runtime").JSX.Element;

@@ -2,6 +2,10 @@ export declare const dropdownOptions: {
     key: string;
     value: string;
 }[];
+export declare const dropdownAutoSuggest: {
+    label: string;
+    value: string;
+}[];
 export declare const radioOptions: {
     key: string;
     value: string;

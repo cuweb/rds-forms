@@ -5,4 +5,4 @@ export interface TextAreaProps {
     helper?: string;
     required?: boolean;
 }
-export declare const TextArea: (props: TextAreaProps) => import("react/jsx-runtime").JSX.Element;
+export declare const TextArea: ({ ...props }: TextAreaProps) => import("react/jsx-runtime").JSX.Element;

@@ -9,4 +9,4 @@ export interface DateTimeProps {
     dateFormat?: string;
     timeFormat?: string;
 }
-export declare const DateTime: (props: DateTimeProps) => import("react/jsx-runtime").JSX.Element;
+export declare const DateTime: ({ ...props }: DateTimeProps) => import("react/jsx-runtime").JSX.Element;

@@ -9,3 +9,6 @@ export { Input } from './components/Input/Input';
 export { Radio } from './components/Radio/Radio';
 export { Select } from './components/Select/Select';
 export { TextArea } from './components/TextArea/TextArea';
+export { FileUpload } from './components/FileUpload/FileUpload';
+export { ImageUpload } from './components/ImageUpload/ImageUpload';
+export { WYSIWYG } from './components/WYSIWYG/WYSIWYG';
