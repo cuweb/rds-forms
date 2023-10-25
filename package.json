@@ -1,18 +1,18 @@
 {
   "name": "@carletonuniversity/rds-forms",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/rds.umd.js",
   "module": "./dist/rds.es.js",
   "types": "./dist/index.d.ts",
   "files": [
     "/dist",
-    "/dist/index.css"
+    "/dist/rds-forms.css"
   ],
   "exports": {
     ".": {
-      "style": "./dist/index.css",
+      "style": "./dist/rds-forms.css",
       "import": "./dist/rds.es.js",
       "require": "./dist/rds.umd.js"
     }
