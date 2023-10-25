@@ -52,7 +52,8 @@
   "dependencies": {
     "@types/react-select": "^5.0.1",
     "react-select": "^5.7.7",
-    "react-datepicker": "^4.21.0"
+    "react-datepicker": "^4.21.0",
+    "react-quill": "^2.0.0"
 
   }
 }

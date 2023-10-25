@@ -4,7 +4,7 @@ const imageUploadValidationSchema = Yup.object().shape({
     .test("is-allowed-format", "Invalid file format", (value) => {
       if (!value) return true;
 
-      const file = value;
+      const file = value as File;
       const fileType = file.type;
       const allowedFileTypes = [
         "image/jpeg",
@@ -16,24 +16,20 @@ const imageUploadValidationSchema = Yup.object().shape({
 
       return allowedFileTypes.includes(fileType);
     })
-    .test(
-      "is-file-size-valid",
-      "File size must be less than 10MB",
-      (value) => {
-        if (!value) return true;
+    .test("is-file-size-valid", "File size must be less than 10MB", (value) => {
+      if (!value) return true;
 
-        const file = value;
+      const file = value as File;
 
-        return file.size <= 10 * 1024 * 1024;
-      }
-    )
+      return file.size <= 10 * 1024 * 1024;
+    })
     .test(
       "is-image-dimensions-valid",
       "Image dimensions must be less than 1000x1000 pixels",
       (value) => {
         if (!value) return true; // No file selected, validation passed
 
-        const file = value;
+        const file = value as File;
 
         if (file.type.startsWith("image/")) {
           return new Promise((resolve) => {
@@ -42,16 +38,18 @@ const imageUploadValidationSchema = Yup.object().shape({
             image.onload = () => {
               const width = image.width;
               const height = image.height;
-              resolve(width <= 2000 && height <= 2000);
+              resolve(width <= 1000 && height <= 1000);
             };
             image.onerror = () => {
               resolve(false);
             };
           });
         }
+
+        // Non-image files are considered valid
         return true;
       }
     ),
 });
 
-export default imageUploadValidationSchema
+export default imageUploadValidationSchema;

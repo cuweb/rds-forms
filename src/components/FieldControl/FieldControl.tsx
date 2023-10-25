@@ -5,8 +5,10 @@ import { Checkbox } from "../Checkbox/Checkbox";
 import { Radio } from "../Radio/Radio";
 import { AutoSuggest } from "../AutoSuggest/AutoSuggest";
 import { DateTime } from "../DateTime/DateTime";
-
-export interface FieldControlProps {
+import { FileUpload } from "../FileUpload/FileUpload";
+import { ImageUpload } from "../ImageUpload/ImageUpload";
+import { WYSIWYG } from "../WYSIWYG/WYSIWYG";
+interface FieldControlProps {
   control: string;
   [key: string]: any;
 }
@@ -29,6 +31,12 @@ export const FieldControl = ({ ...props }: FieldControlProps) => {
       return <AutoSuggest label={rest.label} name={rest.name} {...rest} />;
     case "datetime":
       return <DateTime label={rest.label} name={rest.name} {...rest} />;
+    case "fileUpload":
+      return <FileUpload label={rest.label} name={rest.name} {...rest} />;
+    case "imageUpload":
+      return <ImageUpload label={rest.label} name={rest.name} {...rest} />;
+    case "wysiwyg":
+      return <WYSIWYG label={rest.label} name={rest.name} {...rest} />;
     default:
       return null;
   }
