@@ -51,6 +51,7 @@ export const ImageUpload = (props: ImageUploadProps) => {
           formik.setFieldValue("file", selectedFile);
         }}
         onBlur={formik.handleBlur}
+        {...rest}
       />
 
       <ErrorMessage name={name}>

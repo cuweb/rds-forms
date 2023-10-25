@@ -1,16 +1,16 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { FormContainer } from "../components/FormContainer/FormContainer";
-import { FieldWrapper } from "../components/FieldWrapper/FieldWrapper";
-import { FieldControl } from "../components/FieldControl/FieldControl";
-import { dropdownOptions } from "../data/data";
+import type { Meta, StoryObj } from '@storybook/react'
+import { FormContainer } from '../components/FormContainer/FormContainer'
+import { FieldWrapper } from '../components/FieldWrapper/FieldWrapper'
+import { FieldControl } from '../components/FieldControl/FieldControl'
+import { dropdownOptions } from '../data/data'
 
 const meta: Meta = {
-  title: "Components/Select",
-  tags: ["autodocs"],
-};
+  title: 'Components/Select',
+  tags: ['autodocs'],
+}
 
-export default meta;
-type Story = StoryObj;
+export default meta
+type Story = StoryObj
 
 export const SelectField: Story = {
   render: (args) => (
@@ -25,7 +25,7 @@ export const SelectField: Story = {
       />
     </FormContainer>
   ),
-};
+}
 export const SelectDisabled: Story = {
   render: (args) => (
     <FormContainer {...args}>
@@ -40,7 +40,7 @@ export const SelectDisabled: Story = {
       />
     </FormContainer>
   ),
-};
+}
 
 export const InColumns: Story = {
   render: (args) => (
@@ -65,7 +65,7 @@ export const InColumns: Story = {
       </FieldWrapper>
     </FormContainer>
   ),
-};
+}
 
 export const SizeOptions: Story = {
   render: (args) => (
@@ -108,4 +108,4 @@ export const SizeOptions: Story = {
       />
     </FormContainer>
   ),
-};
+}

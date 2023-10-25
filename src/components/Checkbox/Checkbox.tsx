@@ -1,25 +1,23 @@
-import { Field, ErrorMessage, FieldProps } from "formik";
-import Error from "../Error/Error";
-import { primaryStyles, textStyles, fieldStyles } from "../../styles/styles";
+import { Field, ErrorMessage, FieldProps } from 'formik'
+import Error from '../Error/Error'
+import { primaryStyles, textStyles, fieldStyles } from '../../styles/styles'
 
 export interface CheckboxProps {
-  label: string;
-  name: string;
-  helper?: string;
-  isInline?: boolean;
-  required?: boolean;
+  label: string
+  name: string
+  helper?: string
+  isInline?: boolean
+  required?: boolean
   options?: {
-    key: string;
-    value: string;
-  }[];
+    key: string
+    value: string
+  }[]
 }
 
 export const Checkbox = ({ ...props }: CheckboxProps) => {
-  const { label, name, options, isInline, helper, required, ...rest } = props;
-  const requiredClass = required ? primaryStyles.required : "";
-  const displayInline = isInline
-    ? fieldStyles.horizontalOptions
-    : fieldStyles.verticalOptions;
+  const { label, name, options, isInline, helper, required, ...rest } = props
+  const requiredClass = required ? primaryStyles.required : ''
+  const displayInline = isInline ? fieldStyles.horizontalOptions : fieldStyles.verticalOptions
 
   return (
     <div className={`${primaryStyles.wrapper} ${requiredClass} form-control`}>
@@ -44,22 +42,18 @@ export const Checkbox = ({ ...props }: CheckboxProps) => {
                       {...rest}
                       value={option.value}
                       className={fieldStyles.disabledCheckbox}
-                      checked={
-                        field.value && field.value.includes(option.value)
-                      }
+                      checked={field.value && field.value.includes(option.value)}
                     />
                     <label htmlFor={option.value}>{option.key}</label>
                   </div>
-                );
+                )
               })
-            );
+            )
           }}
         </Field>
       </fieldset>
 
-      <ErrorMessage name={name}>
-        {(error) => <Error>{error}</Error>}
-      </ErrorMessage>
+      <ErrorMessage name={name}>{(error) => <Error>{error}</Error>}</ErrorMessage>
     </div>
-  );
-};
+  )
+}

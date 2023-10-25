@@ -1,0 +1,10 @@
+[
+  {
+    "path": "dist/rds-forms.es.js",
+    "limit": "125 kB"
+  },
+  {
+    "path": "dist/rds-forms.umd.js",
+    "limit": "125 kB"
+  }
+]

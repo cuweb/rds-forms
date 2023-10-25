@@ -1,33 +1,29 @@
-import { Formik, Form } from "formik";
-import * as Yup from "yup";
-import { ReactNode } from "react";
+import { Formik, Form } from 'formik'
+import * as Yup from 'yup'
+import { ReactNode } from 'react'
 
 export interface FormContainerProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export const FormContainer = ({ children }: FormContainerProps) => {
   const initialValues = {
-    firstname: "",
-    radioOption: "rOption1",
-    checkboxOption: "cOption2",
-  };
+    firstname: '',
+    radioOption: 'rOption1',
+    checkboxOption: 'cOption2',
+  }
 
   const validationSchema = Yup.object().shape({
-    firstname: Yup.string().required("First Name is required"),
-  });
+    firstname: Yup.string().required('First Name is required'),
+  })
 
   const onSubmit = (values: { firstname: string }) => {
-    console.log("Form data", values);
-  };
+    console.log('Form data', values)
+  }
 
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={onSubmit}
-    >
+    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
       <Form>{children}</Form>
     </Formik>
-  );
-};
+  )
+}

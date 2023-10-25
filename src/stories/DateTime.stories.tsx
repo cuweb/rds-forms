@@ -1,14 +1,14 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { FormContainer } from "../components/FormContainer/FormContainer";
-import { FieldControl } from "../components/FieldControl/FieldControl";
+import type { Meta, StoryObj } from '@storybook/react'
+import { FormContainer } from '../components/FormContainer/FormContainer'
+import { FieldControl } from '../components/FieldControl/FieldControl'
 
 const meta: Meta = {
-  title: "Components/Date & Time",
-  tags: ["autodocs"],
-};
+  title: 'Components/Date & Time',
+  tags: ['autodocs'],
+}
 
-export default meta;
-type Story = StoryObj;
+export default meta
+type Story = StoryObj
 
 export const DateTimeField: Story = {
   render: (args) => (
@@ -23,7 +23,7 @@ export const DateTimeField: Story = {
       />
     </FormContainer>
   ),
-};
+}
 
 export const DateTimeDisabled: Story = {
   render: (args) => (
@@ -38,7 +38,7 @@ export const DateTimeDisabled: Story = {
       />
     </FormContainer>
   ),
-};
+}
 
 export const FormatChange: Story = {
   render: (args) => (
@@ -54,7 +54,7 @@ export const FormatChange: Story = {
       />
     </FormContainer>
   ),
-};
+}
 export const ShowTime: Story = {
   render: (args) => (
     <FormContainer {...args}>
@@ -69,7 +69,7 @@ export const ShowTime: Story = {
       />
     </FormContainer>
   ),
-};
+}
 
 export const MinDate: Story = {
   render: (args) => (
@@ -86,4 +86,4 @@ export const MinDate: Story = {
       />
     </FormContainer>
   ),
-};
+}
