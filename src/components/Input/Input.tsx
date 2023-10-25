@@ -11,7 +11,7 @@ export interface InputProps {
   required?: boolean;
 }
 
-export const Input = (props: InputProps) => {
+export const Input = ({ ...props }: InputProps) => {
   const { label, name, maxWidth, helper, required, ...rest } = props;
   const fieldMaxWidth = maxWidth ? maxWidthClasses[maxWidth] : "";
   const requiredClass = required ? primaryStyles.required : "";

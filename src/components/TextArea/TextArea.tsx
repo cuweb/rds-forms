@@ -11,7 +11,7 @@ export interface TextAreaProps {
   required?: boolean;
 }
 
-export const TextArea = (props: TextAreaProps) => {
+export const TextArea = ({ ...props }: TextAreaProps) => {
   const { label, name, maxWidth, helper, required, ...rest } = props;
   const fieldMaxWidth = maxWidth ? maxWidthClasses[maxWidth] : "";
   const requiredClass = required ? primaryStyles.required : "";
