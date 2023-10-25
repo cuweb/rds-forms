@@ -5,7 +5,7 @@ import { FieldControl } from "../components/FieldControl/FieldControl";
 import { dropdownAutoSuggest } from "../data/data";
 
 const meta: Meta = {
-  title: "Components/AutoSuggest",
+  title: "Components/Auto Suggest",
   tags: ["autodocs"],
 };
 
