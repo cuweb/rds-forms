@@ -17,7 +17,7 @@ export interface DateTimeProps {
   timeFormat?: string;
 }
 
-export const DateTime = (props: DateTimeProps) => {
+export const DateTime = ({ ...props }: DateTimeProps) => {
   const {
     label,
     name,
